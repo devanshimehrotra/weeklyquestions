@@ -1,0 +1,120 @@
+// C- Programming Language 
+// Week – 1 
+// Programming Questions 
+
+/*
+Q. 1 Write a program to accept height and base of triangle and calculate area of 
+Triangle 
+Note: area =(h*b)/2
+
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	float b,h,a;
+	printf("\nenter height and base of the triangle :");
+	scanf("%f%f",&h,&b);
+	a=(h*b)/2;
+	printf("\narea of Triangle : %f",a);
+	return 0;	
+}
+*/
+
+/*
+Q. 2 Write a program to accept radius of circle and calculate area of circle 
+Note: area =pi * r2 
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	float r,a;
+	printf("enter radius of the circle :");
+	scanf("%f",&r);
+	a=(22.0/7)*r*r;
+	printf("\narea of circle is :%f",a);
+	return 0;
+}
+*/
+
+/*
+Q. 3 Write a program to find the lowest marks of three students using conditional 
+operator. 
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int m1,m2,m3,l,s;
+	printf("enter marks of 1st 2nd and 3rd  students :");
+	scanf("%d%d%d",&m1,&m2,&m3);
+	if(m1<m2)
+	{
+		if (m1<m3)
+		{
+			l=m1;
+			s=1;
+		}
+		else 
+		{
+			l=m3;
+			s=3;
+		}
+	}
+	else if (m2<m3)
+	{
+		l=m2;
+		s=2;
+	}
+	else 
+	{
+		l=m3;
+		s=3;
+	}
+	printf("lowest marks are of %d student and are %d ",s,l);
+	return 0;
+}
+*/
+
+/*
+Q. 4 Write a program to Calculate Compound Interest
+*/
+
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+	float p,r,a,ci;
+	int t;
+	printf("enter principle : ");
+	scanf("%f",&p);
+	printf("\nenter rate : ");
+	scanf("%f",&r);
+	printf("\nenter time: ");
+	scanf("%d",&t);
+	a=pow((1+(r/100.0)),t)*p;
+	ci=a-p;
+	printf("\ncompount interest = %f",a);	
+}
+*/
+
+/*
+Q. 5 Write a program to Calculate Cube of a Number
+*/
+
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+	float num;
+	printf("enter number :");
+	scanf("%f",&num);
+	printf("cube of the number is : %f",pow(num,3));
+}
+*/
