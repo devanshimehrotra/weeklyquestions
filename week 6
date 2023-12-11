@@ -1,0 +1,280 @@
+//C- Programming Language 
+//Week – 6 
+//Programming Questions 
+// question 4 /5 /8
+
+//Q. 1 Write a menu driven program to insert and delete elements of kth position to     
+//an array of size N. 
+
+/*
+# include <stdio.h>    
+int main()
+{
+	int n,i,p,ch,ni,arri,k=1;
+	printf("enter size of array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("enter elements of the array : ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	
+	printf("\narray before modification : ");
+	for(i=0;i<n;i++)
+	{
+		printf("%d",arr[i]);
+	}
+	
+	
+	printf("\ninsert enter 1 \n delete enter 0 ");
+	scanf("%d",&ch);
+	if (ch==1)
+	{
+		printf("enter position and number to be inserted : ");
+	    scanf("%d%d",&p,&ni);
+	    p--;
+	    
+	    for(i=n;i>p;i--)
+	    {
+	    	arr[i]=arr[i-1];
+	    }
+	    arr[p]=ni; 
+	    
+	printf("\narray after modification : ");
+	for(i=0;i<=n;i++)
+	{
+		printf("%d",arr[i]);
+	}
+	}
+	else 
+	{
+		printf("enter position to be deleted  : ");
+	    scanf("%d",&p);
+	    p--;
+	    for(i=p;i<n-1;i++)
+	    {
+	    	arr[i]=arr[i+1];
+	    }
+	    
+	printf("\narray after modification : ");
+	for(i=0;i<n-1;i++)
+	{
+		printf("%d",arr[i]);
+	}
+	}		
+}
+*/
+
+//Q. 2 Write the program to print the biggest and smallest element in an array. 
+
+/*
+# include <stdio.h>    
+int main()
+{
+	int n,i;
+	printf("enter size of array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("enter elements of the array : ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	int max=arr[0],min=arr[0];
+	printf("\narray  is : ");
+	for(i=0;i<n;i++)
+	{
+		if(max<arr[i])
+		{
+			max=arr[i];
+		}
+		if(min>arr[i])
+		{
+			min=arr[i];
+		}	  
+	}
+	
+	printf("\nminimum is %d",min);
+	printf("\nmaximun is %d",max);
+}
+*/
+
+
+//Q. 3 Write the program to print the sum and average of an array.
+
+/*
+# include <stdio.h>    
+int main()
+{
+	int n,i,sum=0;
+	printf("enter size of array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("enter elements of the array : ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		sum=sum+arr[i];
+	}
+	printf("\nsum of the array is %d",sum);
+	printf("\naverage of the array is %d",sum/n);
+}
+*/
+	
+//Q. 4 Write the program to sort an array using bubble sort. //query 
+
+//Q. 5 Write the program to search an element using linear search as well as binary search.   //query
+
+/*
+# include <stdio.h>    
+int main()
+{
+	int n,i,sum=0,item;
+	printf("enter size of array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("enter elements of the array : ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("\nenter element to be found : ");
+	scanf("%d",&item);
+	for(i=0;i<n;i++)
+	{
+		if(arr[i]==item)
+		{
+			printf("element found at index %d ",i);
+			break;
+		}	
+	}
+	if (i>=n)
+	{
+		printf("element not found");
+	}	
+}
+*/
+
+
+/*
+Q. 6 Take an array of 20 integer inputs from user and print the following: 
+a. number of positive numbers 
+b. number of negative numbers 
+c. number of odd numbers 
+d. number of even numbers 
+e. number of 0. 
+*/
+
+/*
+# include <stdio.h>    
+int main()
+{
+	int n,i,sum=0,item,a=0,b=0,c=0,d=0,e=0;
+	int arr[20];
+	printf("enter elements of the array : ");
+	for(i=0;i<20;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("\nthe array is : ");
+	for(i=0;i<20;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	
+	for(i=0;i<20;i++)
+	{
+		if(arr[i]>0)
+		  a++;
+		if (arr[i]<0)
+		    b++;
+		if (arr[i]%2==0)
+		   c++;
+		if (arr[i]%2!=0)
+		   d++;
+		if (arr[i]==0)
+		   e++;
+	}	
+	printf("\nnumber of positive numbers %d",a);
+	printf("\nnumber of negative numbers %d",b);
+	printf("\nnumber of odd numbers %d",d);
+	printf("\nnumber of even numbers %d",c);
+	printf("\nnumber of 0. %d",e);	
+}
+*/
+
+/*
+Q. 7 Take an array of 10 elements. Split it into middle and store the elements in 
+two different arrays. E.g.- 
+INITIAL array: 
+58, 24, 13, 15, 63, 9, 8, 81, 1, 78 
+After splitting: 
+58, 24, 13, 15, 63 
+9, 8, 81, 1, 78 
+*/
+
+/*
+# include <stdio.h>    
+int main()
+{
+	int j;
+	int arr[10],a1[5],a2[5],i;
+	printf("enter elements of the array : ");
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(i=0,j=5;i<5,j<10;i++,j++)
+	{
+		a1[i]=arr[i];
+		a2[i]=arr[j];
+	}
+	printf("\nfirst array is : ");
+	for(i=0;i<5;i++)
+	{
+		printf("%d",a1[i]);
+	}
+	printf("\nsecond array is : ");
+	for(i=0;i<5;i++)
+	{
+		printf("%d",a2[i]);
+	}
+}
+*/
+
+
+/*
+Q. 8 Write the program to count frequency of each element in an array.  //query
+*/
+
+/*
+# include <stdio.h>    
+int main()
+{
+	int j,count,a;
+	int arr[10],i;
+	printf("enter elements of the array : ");
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+    for(i=0;i<10;i++)
+	{
+		 count=0;
+		 a=arr[i];
+		  for(j=0;j<10;j++)
+	      {
+		      if (arr[i]==arr[j])
+		      {
+		      	count++;
+			  }
+		
+	      }
+	      printf("\n%d has occured %d times",a,count);
+	}
+}
+*/
