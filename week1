@@ -2,12 +2,7 @@
 // Week – 1 
 // Programming Questions 
 
-/*
-Q. 1 Write a program to accept height and base of triangle and calculate area of 
-Triangle 
-Note: area =(h*b)/2
-
-*/
+//Q. 1 Write a program to accept height and base of triangle and calculate area of Triangle Note: area =(h*b)/2
 
 /*
 # include <stdio.h>
@@ -22,10 +17,7 @@ int main()
 }
 */
 
-/*
-Q. 2 Write a program to accept radius of circle and calculate area of circle 
-Note: area =pi * r2 
-*/
+//Q. 2 Write a program to accept radius of circle and calculate area of circle Note: area =pi * r2 
 
 /*
 # include <stdio.h>
@@ -40,10 +32,7 @@ int main()
 }
 */
 
-/*
-Q. 3 Write a program to find the lowest marks of three students using conditional 
-operator. 
-*/
+//Q. 3 Write a program to find the lowest marks of three students using conditional operator. 
 
 /*
 # include <stdio.h>
@@ -80,9 +69,7 @@ int main()
 }
 */
 
-/*
-Q. 4 Write a program to Calculate Compound Interest
-*/
+//Q. 4 Write a program to Calculate Compound Interest
 
 /*
 # include <stdio.h>
@@ -103,9 +90,7 @@ int main()
 }
 */
 
-/*
-Q. 5 Write a program to Calculate Cube of a Number
-*/
+//Q. 5 Write a program to Calculate Cube of a Number
 
 /*
 # include <stdio.h>
