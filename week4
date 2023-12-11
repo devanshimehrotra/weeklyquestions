@@ -1,0 +1,271 @@
+//C- Programming Language 
+//Week – 4 
+//Programming Questions 
+// question 10 
+
+//Q. 1 Write a C program to print multiplication table of a number.
+/*
+# include <stdio.h>
+int main()
+{
+	int num,i;
+	printf("enter number whose table you have to print : ");
+	scanf("%d",&num);
+	
+	for(i=1;i<=10;i++)
+	{
+		printf("\n%d * %d = %d ",num,i,num*i);
+	}
+}
+*/
+
+//Q. 2 Write a C program to calculate factorial of a number. 
+
+/*
+# include <stdio.h>
+int main()
+{
+	int num,i,fact=1;
+	printf("enter number : ");
+	scanf("%d",&num);
+	
+	for(i=1;i<=num;i++)
+	{
+		fact=fact*i;
+	}
+	printf("\n factorial is %d",fact);
+}
+*/
+
+//Q. 3 Write a C program to check whether a number is palindrome or not. 
+
+/*
+# include <stdio.h>
+int main()
+{
+	int num,num1,rev=0,r;
+	printf("enter a number : ");
+	scanf("%d",&num);
+	num1=num;
+	
+	while(num1!=0)
+	{
+		r=num1%10;
+		rev=rev*10+r;
+		num1=num1/10;
+	}
+	if (rev==num)
+	{
+		printf("pallindrome number ");
+	}
+	else 
+	{
+		printf(" not pallindrome number ");
+	}	
+}
+*/
+
+//Q. 4 Write a C program to count frequency of digits in a given number.
+ 
+/*
+# include <stdio.h>
+int main()
+{
+	int num,n,count=0,r;
+	printf("enter a number : ");
+	scanf("%d",&num);
+	printf("\nenter number to be counted : ");
+	scanf("%d",&n);
+	while(num!=0)
+	{   r=num%10;
+	    
+	    if (r==n)
+	    {
+	    	count++;
+		}
+		
+		num=num/10;	
+	}	
+	printf("it has occured %d times ",count);
+}
+*/
+
+//Q. 5 Write a C program to find HCF(GCD) AND LCM of two numbers. 
+
+/*
+# include <stdio.h>
+int main()
+{
+	int n1,n2,hcf,n3,n4;
+	printf("enter two numbers : ");
+	scanf("%d%d",&n1,&n2);
+	n3=n1;
+	n4=n2;
+	while(n1!=n2)
+	{
+		if(n1>n2)
+		{
+			n1=n1-n2;
+		}
+	    else 
+	    {
+	    	n2=n2-n1;
+		}
+	}
+	hcf=n1;
+	int lcm;
+	lcm=(n3*n4)/hcf;
+	printf("\nHCF IS %d",hcf);
+    printf("\nLCM IS %d",lcm);
+}
+*/
+
+//Q. 6 Write a C program to print all prime numbers between 1 to n. 
+
+/*
+# include <stdio.h>
+int main()
+{
+	int n,i,j,count=0;
+	printf("enter number : ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		count=0;
+		for(j=1;j<=i;j++)
+		{
+	       if(i%j==0)
+	       count++;
+		}
+		if(count==2)
+		{
+			printf("\n %d is a prime number ",i);
+		}
+	}
+}
+*/
+
+//Q. 7 Write a C program to print Fibonacci series up to n terms. 
+
+/*
+# include <stdio.h>
+int main()
+{
+  int a=0,b=1,num,i,c;
+  printf("enter number :");
+  scanf("%d",&num);
+  num=num-2;
+  
+  printf("\nfibonacci series : ");
+  printf("\n%d\n%d",a,b);
+  for(i=1;i<=num;i++)
+  {
+  	c=a+b;
+  	printf("\n%d",c);
+  	a=b;b=c;
+  }		
+}
+*/
+
+//Q. 8 Write a C program to print Armstrong numbers from 1 to n AND check a given number is Armstrong numbers or not.
+
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{   
+    int n,i,i1,i2,r,nod=0,sum=0,i3;
+	printf("enter number : ");
+	scanf("%d",&n);
+	
+	for (i=1;i<=n;i++)
+	{
+	
+		sum=0;
+		nod=0;
+		i1=i;
+		i2=i;
+		i3=i;
+		while(i1!=0)
+		{
+			nod++;
+			i1=i1/10;
+		}
+	   
+	    while(i2!=0)
+	    {
+	    	r=i2%10;
+	    	sum=sum+pow(r,nod);
+	    	i2=i2/10;
+		}
+	
+		if (i3==sum)
+		{
+			printf("\nit is a armstrong number %d ",i3);
+		}
+	}	
+}
+*/
+
+//H.O.T.S Questions 
+//Q. 9 Write a C program to print all Perfect numbers between 1 to n AND Check a given number is Perfect numbers or not.
+
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+	int n,i,j,sum;
+	printf("enter number : ");
+	scanf("%d",&n);
+	
+	for (i=1;i<=n;i++)
+	{
+	//	printf("\n%d",i);
+		 sum=0;
+		 for(j=1;j<i;j++)
+		 {
+		 	if(i%j==0)
+		 	{
+		 		sum=sum+j;
+			 }
+		 }
+		 if (i==sum)
+		 {
+		 	printf("\n%d is a perfect number ",i);
+		 }
+	}
+}
+*/
+
+
+//Q. 10 Write a C program to print all Strong Numbers between 1 to n.  //query 
+
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+	int n,sum=1,i,j,fact,r;
+	printf("enter number : ");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		printf("%d",i);
+		fact=0;
+		while(i!=0)
+	    {
+	    	sum=1;
+	    	r=i%10;
+	    	for(j=1;j<=r;j++)
+	    	{
+	    		sum=sum*j;
+			}
+			fact=fact+sum;
+	        i=i%10;
+		}
+		printf(" %d",fact);
+	}
+}
+*/
