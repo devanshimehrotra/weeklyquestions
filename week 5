@@ -1,0 +1,407 @@
+//C- Programming Language 
+//Week – 5 
+//Programming Questions 
+// question n 
+
+//Q. 1 Write a program to print the following patterns: 
+
+/*
+a.  *****
+    *****
+    *****
+    *****
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j,k;
+	int r,c;
+	printf("enter rows and columns ");
+	scanf("%d%d",&r,&c);
+	
+	for(i=1;i<=r;i++)
+	{
+		for(j=1;j<=c;j++)
+	    {
+		     printf("*");
+	    }
+	    printf("\n");
+	}
+}  
+*/
+
+/*
+b. 12345
+   12345
+   12345
+   12345
+   12345
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+	    {
+		     printf("%d",j);
+	    }
+	    printf("\n");
+	}
+}  
+*/
+
+
+/*
+c. 1
+   12
+   123
+   1234
+   12345
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+	    {
+		     printf("%d",j);
+	    }
+	    printf("\n");
+	}
+}  
+*/
+
+
+/*
+d. 1
+   22
+   333
+   4444
+   55555
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+	    {
+		     printf("%d",i);
+	    }
+	    printf("\n");
+	}
+}  
+*/
+
+/*
+e. *
+   **
+   ***
+   ****
+   *****
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+	    {
+		     printf("*");
+	    }
+	    printf("\n");
+	}
+}  
+*/
+
+
+/*
+f.     A
+      AB
+     ABC
+    ABCD
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j,k,a;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n-i;j++)
+	    {
+		     printf(" ");
+	    }
+	    
+	   for(k=1,a=65;k<=i;k++,a++)
+	   {
+		    printf("%c",a);
+	   }
+	   
+	    printf("\n");
+	}	
+}  
+*/
+
+/*
+g. 1
+   23
+   456
+   78910
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j,num=1;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+	    {
+		     printf("%d",num);
+		     num++;
+	    }
+	    printf("\n");
+	}
+} 
+*/
+
+/*
+h. 1
+   10
+   101
+   1010
+   10101
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j,num=1;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=i;j++)
+	    {
+		    if (j%2==0)
+		      printf("0");
+		    else 
+		      printf("1");
+	    }
+	    printf("\n");
+	}
+} 
+*/
+
+/*
+i. 5
+   54
+   543
+   5432
+   54321
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j,k;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=1,k=n;j<=i;j++,k--)
+	    {
+		     printf("%d",k);
+	    }
+	    printf("\n");
+	}
+}  
+*/
+
+/*
+j. 54321
+   5432
+   543
+   54
+   5
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i++)
+	{
+		for(j=n;j>=i;j--)
+	    {
+		     printf("%d",j);
+	    }
+	    printf("\n");
+	}
+}
+*/
+
+
+/*
+  k  * * * * * 
+     *       * 
+     *       *
+     *       *
+     * * * * *
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	int i,j,k;
+	int n;
+	printf("enter number ");
+	scanf("%d",&n);
+	for(i=1;i<=n;i++)
+	{
+		for(j=1;j<=n;j++)
+	     {
+		    if (i==1||j==1||i==n||j==n)
+		    {
+		    	printf("* ");
+			}
+			else 
+			   printf("  ");
+	     }
+	     printf("\n");
+	}
+}  
+*/
+
+/*
+l    *
+    * *
+   * * * 
+  * * * * 
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	 int i,j,k,n=5;
+	for (i=1;i<=n;i++)
+	{
+		for (k=n;k>i;k--)
+	{
+		printf(" ");
+	}
+	for (j=1;j<=i;j++)
+	{
+		printf("* ");
+	}
+	printf("\n");
+	}
+}
+*/
+
+/*
+m
+    *
+   * *
+  * * *
+ * * * *
+  * * *
+   * *
+    *
+*/
+
+/*
+# include <stdio.h>
+int main()
+{
+	 int i,j,k,n=5;
+	for (i=1;i<=n;i++)
+	{
+		for (k=n;k>i;k--)
+	{
+		printf(" ");
+	}
+	for (j=1;j<=i;j++)
+	{
+		printf("* ");
+	}
+	printf("\n");
+	}
+	
+	for (i=n-1;i>=1;i--)
+	{
+		for (k=n-1;k>=i;k--)
+	{
+		printf(" ");
+	}
+	for (j=i;j>=1;j--)
+	{
+		printf("* ");
+	}
+	printf("\n");
+	}		
+}
+*/
+
+/*          //query
+n. 6789
+    345
+     21
+      0
+*/
+
