@@ -1,0 +1,65 @@
+//C- Programming Language 
+//Week – 2 
+//Programming Questions
+// question 3 / 5 
+
+//Q. 1 Write a program to interchange two values by using Assignment Operator.
+ 
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+	int a,b,c;
+	printf("enter two numbers to be interchanged : ");
+	scanf("%d%d",&a,&b);
+	c=b;
+	b=a;
+	a=c;
+	printf("\ninterchanged numbers are : %d %d ",a,b);
+	return 0;
+}
+*/
+
+//Q. 2 Write a program to interchange two values by using Arithmetic Operator. 
+
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+	int a,b,c;
+	printf("enter two numbers to be interchanged : ");
+	scanf("%d%d",&a,&b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	
+	printf("\ninterchanged numbers are : %d %d ",a,b);
+	return 0;	
+}
+*/
+
+//Q. 3 Write a program to interchange two values by using Bitwise Operator. // query 
+
+//Q. 4 Write a program to find the size of all data types (Int, Float, Char, Double, Long Double, Short Int etc.). 
+
+/*
+# include <stdio.h>
+# include <math.h>
+int main()
+{	
+	printf("\nsize of  int is %d ",sizeof(int));
+	printf("\nsize of  float is %d ",sizeof(float));
+	printf("\nsize of  char is %d ",sizeof(char));
+	printf("\nsize of  double is %d ",sizeof(double));
+	printf("\nsize of  long double is %d ",sizeof(long double));
+	printf("\nsize of  short int is %d ",sizeof(short int));
+	
+	return 0;	
+}
+*/
+
+//Q. 5 Write a program to find out whether input number is even or odd without using arithmetic operators. //query 
+
+
